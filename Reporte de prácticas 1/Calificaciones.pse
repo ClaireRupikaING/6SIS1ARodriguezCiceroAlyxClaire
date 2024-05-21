@@ -1,0 +1,20 @@
+Inicio
+    Declarar Entero n, i
+    Declarar Real calificacion, suma, promedio
+
+    suma <- 0
+
+    Escribir "Programa creado por Claire <3"
+    Escribir "Ingrese el número de calificaciones:"
+    Leer n
+
+    Para i <- 1 Hasta n Hacer
+        Escribir "Ingresa la calificación ", i, ":"
+        Leer calificacion
+        suma <- suma + calificacion
+    FinPara
+
+    promedio <- suma / n
+
+    Escribir "El promedio de las calificaciones es: ", promedio
+Fin
