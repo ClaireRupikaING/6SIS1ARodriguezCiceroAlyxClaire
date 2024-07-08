@@ -1,6 +1,6 @@
 #include <iostream>
-#include <cstdlib> // Para rand() y srand()
-#include <ctime>   // Para time en num aleatorios
+#include <cstdlib>
+#include <ctime>   // time en num aleatorios
 
 using namespace std;
 
@@ -27,7 +27,7 @@ int main() {
     const int SIZE = 10;
     int arr[SIZE];
     
-    // Inician números aleatorios
+    // generar números aleatorios
     srand(static_cast<unsigned int>(time(0)));
     
     // Generar 10 números aleatorios
@@ -35,13 +35,13 @@ int main() {
         *(arr + i) = rand() % 100;
     }
     
-    cout << "Array original: ";
+    cout << "Original: ";
     printArray(arr, SIZE);
     
-    // Ordenar el array de mayor a menor usando el método burbuja
+    // Ordenar de mayor a menor usando el método burbuja
     bubbleSort(arr, SIZE);
     
-    cout << "Array ordenado (mayor a menor): ";
+    cout << "Ordenado (mayor a menor): ";
     printArray(arr, SIZE);
     
     return 0;
